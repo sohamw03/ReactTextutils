@@ -1,11 +1,26 @@
 import React, { useState } from "react";
 
 export default function TextForm(props) {
-    const [text, setText] = useState("Enter text here");
+    const [text, setText] = useState("");
+    const [copyBtnText, setCopyBtnText] = useState("Copy Text");
 
     const handleUpClick = () => {
-        let newText = text.toUpperCase();
+        let newText = text.toUpperCase().trim();
         setText(newText);
+    };
+
+    const handleLoClick = () => {
+        let newText = text.toLowerCase().trim();
+        setText(newText);
+    };
+
+    const handleCopyClick = () => {
+        navigator.clipboard.writeText(text);
+        setCopyBtnText("Copied!");
+        document.getElementById("mybox").select();
+        setTimeout(() => {
+            setCopyBtnText("Copy Text");
+        }, 1000);
     };
 
     const handleOnChange = (e) => {
@@ -13,14 +28,33 @@ export default function TextForm(props) {
     };
 
     return (
-        <div>
-            <h1>{props.heading}</h1>
-            <div className="mb-3">
-                <textarea className="form-control" id="mybox" rows="15" value={text} onChange={handleOnChange}></textarea>
+        <>
+            <div className="container">
+                <h1>{props.heading}</h1>
+                <div className="mb-3">
+                    <textarea className="form-control" id="mybox" rows="15" value={text} onChange={handleOnChange}></textarea>
+                </div>
+                <div className="my-2">
+                    <button className="btn btn-primary me-2" onClick={handleUpClick}>
+                        Convert to Uppercase
+                    </button>
+                    <button className="btn btn-primary me-2" onClick={handleLoClick}>
+                        Convert to Lowercase
+                    </button>
+                    <button className="btn btn-primary me-2" onClick={handleCopyClick}>
+                        {copyBtnText}
+                    </button>
+                </div>
             </div>
-            <button className="btn btn-primary" onClick={handleUpClick}>
-                Convert to Uppercase
-            </button>
-        </div>
+            <div className="container my-3">
+                <h2>Your text summary</h2>
+                <p>
+                    {text.split(" ").length} words and {text.length} characters
+                </p>
+                <p>{0.008 * text.split(" ").length} minutes to read</p>
+                <h2>Preview</h2>
+                <p>{text}</p>
+            </div>
+        </>
     );
 }
