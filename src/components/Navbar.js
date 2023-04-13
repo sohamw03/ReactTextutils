@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export default function Navbar(props) {
     return (
-        <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} border-bottom border-secondary`}>
+        <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} shadow py-3 px-2`}>
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
                     {props.title}
@@ -36,8 +36,8 @@ export default function Navbar(props) {
                         </label>
                     </div>
                     <form className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-success" type="submit">
+                        <input className="form-control me-1 rounded-5 rounded-end" type="search" placeholder="Search" aria-label="Search" />
+                        <button className="btn btn-outline-success rounded-5 rounded-start" type="submit">
                             Search
                         </button>
                     </form>
