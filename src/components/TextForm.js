@@ -42,16 +42,16 @@ export default function TextForm(props) {
                     <textarea className={`form-control bg-${props.mode} text-${props.mode==="light"?"secondary":"light"} rounded-4 p-4 fs-5 border-secondary`} id="mybox" rows="15" value={text} onChange={handleOnChange} style={{resize:"none"}}></textarea>
                 </div>
                 <div className="my-2">
-                    <button className={`btn btn-${props.mode==="light"?"secondary":"light"} me-2 rounded-pill shadow-sm`} onClick={handleUpClick}>
+                    <button className={`btn btn-${props.mode==="light"?"secondary":"light"} me-2 mb-2 rounded-pill shadow-sm`} onClick={handleUpClick}>
                         Convert to Uppercase
                     </button>
-                    <button className={`btn btn-${props.mode==="light"?"secondary":"light"} me-2 rounded-pill shadow-sm`} onClick={handleLoClick}>
+                    <button className={`btn btn-${props.mode==="light"?"secondary":"light"} me-2 mb-2 rounded-pill shadow-sm`} onClick={handleLoClick}>
                         Convert to Lowercase
                     </button>
-                    <button className={`btn btn-${props.mode==="light"?"secondary":"light"} me-2 rounded-pill shadow-sm`} onClick={handleCopyClick}>
+                    <button className={`btn btn-${props.mode==="light"?"secondary":"light"} me-2 mb-2 rounded-pill shadow-sm`} onClick={handleCopyClick}>
                         {copyBtnText}
                     </button>
-                    <button className={`btn btn-outline-danger me-2 rounded-pill shadow-sm`} onClick={handleClearClick}>
+                    <button className={`btn btn-outline-danger me-2 mb-2 rounded-pill shadow-sm`} onClick={handleClearClick}>
                         Clear Text
                     </button>
                 </div>

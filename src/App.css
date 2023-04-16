@@ -1,0 +1,11 @@
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:after{
+    filter: invert(70%) saturate(0%);
+}
+
+.accordion-button{
+    background-color: #262a2f !important;
+}
