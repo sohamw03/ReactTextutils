@@ -6,6 +6,6 @@
     filter: invert(70%) saturate(0%);
 }
 
-.accordion-button{
+.accordion-button-dark{
     background-color: #262a2f !important;
 }

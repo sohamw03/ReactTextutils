@@ -8,7 +8,7 @@ export default function About(props) {
             <div className="accordion" id="accordionExample">
                 <div className={`accordion-item bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"} border border-secondary border-bottom-0`}>
                     <h2 className="accordion-header" id="headingOne">
-                        <button className={`accordion-button collapsed bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button className={`accordion-button accordion-button-${props.mode} collapsed bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <strong>About Us</strong>
                         </button>
                     </h2>
@@ -18,7 +18,7 @@ export default function About(props) {
                 </div>
                 <div className={`accordion-item bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"} border border-secondary border-bottom-0`}>
                     <h2 className="accordion-header" id="headingTwo">
-                        <button className={`accordion-button collapsed bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button className={`accordion-button accordion-button-${props.mode} collapsed bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <strong>Our History</strong>
                         </button>
                     </h2>
@@ -28,7 +28,7 @@ export default function About(props) {
                 </div>
                 <div className={`accordion-item bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"} border border-secondary border-bottom-0`}>
                     <h2 className="accordion-header" id="headingThree">
-                        <button className={`accordion-button collapsed bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button className={`accordion-button accordion-button-${props.mode} collapsed bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <strong>Our Tools</strong>
                         </button>
                     </h2>
@@ -38,7 +38,7 @@ export default function About(props) {
                 </div>
                 <div className={`accordion-item bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"} border border-secondary border-bottom-0`}>
                     <h2 className="accordion-header" id="headingFour">
-                        <button className={`accordion-button collapsed bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <button className={`accordion-button accordion-button-${props.mode} collapsed bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                             <strong>Our Community</strong>
                         </button>
                     </h2>
@@ -48,7 +48,7 @@ export default function About(props) {
                 </div>
                 <div className={`accordion-item bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"} border border-secondary`}>
                     <h2 className="accordion-header" id="headingFive">
-                        <button className={`accordion-button collapsed bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <button className={`accordion-button accordion-button-${props.mode} collapsed bg-${props.mode} text-${props.mode === "light" ? "secondary" : "light"}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                             <strong>Our Future</strong>
                         </button>
                     </h2>
