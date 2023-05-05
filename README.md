@@ -44,4 +44,6 @@ This website was built using the following technologies:
 
 If you would like to contribute to this project, please submit a pull request. All contributions are welcome!
 
-Thank you to CodeWithHarry.com for helping me with this.
+## Credits
+
+This project was developed by me and inspired by CodeWithHarry.com
